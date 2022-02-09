@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Lab Cat</title>
+	<link rel="stylesheet" href="style.css"/>
+
+	<script src="easeljs-0.8.2.min.js"></script>
+	<script src="tweenjs-0.5.1.min.js"></script>
+	<script src="utils.js"></script>
+	<script src="point.js"></script>
+	<script src="size.js"></script>
+	<script src="keyrecorder.js"></script>
+	<script src="scene.js"></script>
+	<script src="physicsbody.js"></script>
+	<script src="skin.js"></script>
+	<script src="entity.js"></script>
+	<script src="physicsworld.js"></script>
+	<script src="player.js"></script>
+	<script src="engine.js"></script>
+	<script src="test.js"></script>
+
+	</head>
+	<body>
+		<canvas id="mainGame"></canvas>
+
+		<script>
+			let canvas = document.getElementById("mainGame")
+			canvas.width = innerWidth
+			canvas.height = innerHeight
+
+			window.addEventListener("resize", _ => {
+				canvas.width = innerWidth
+				canvas.height = innerHeight
+			})
+
+			let app = new Engine(canvas)
+			app.run()
+		</script>
+	</body>
+</html>
