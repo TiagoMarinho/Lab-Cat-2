@@ -24,8 +24,8 @@ class PhysicsWorld {
 
 			body.pastPosition = body.position.copy()
 
-			body.position.x += (delta / 1000) * (body.velocity.x * Utils.SCALE)
-			body.position.y += (delta / 1000) * (body.velocity.y * Utils.SCALE)
+			body.position.x += (delta / 1000) * (body.velocity.x / 2.4 * Utils.SCALE)
+			body.position.y += (delta / 1000) * (body.velocity.y / 2.4 * Utils.SCALE)
 
 			body.airborne = true
 		}
